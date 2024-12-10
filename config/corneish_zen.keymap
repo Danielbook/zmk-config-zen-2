@@ -25,6 +25,20 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+        layoutswitch: layoutswitch {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LAYOUTSWITCH";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+        };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NEW_BEHAVIOR";
+            #binding-cells = <0>;
+            bindings = <&mo 3>, <&tog 0>, <&tog 1>;
+        };
     };
 
     keymap {
